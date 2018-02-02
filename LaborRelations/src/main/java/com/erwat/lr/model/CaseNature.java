@@ -39,7 +39,7 @@ public class CaseNature {
 	@Column(name = "\"END_DATE\"", columnDefinition = "SECONDDATE")
 	private Date eDate;
 	
-	@ManyToOne (fetch=FetchType.LAZY)
+	@ManyToOne (fetch=FetchType.EAGER)
 	@JoinColumn(name="\"CATEGORY.ID\"",referencedColumnName="\"ID\"",insertable=false, updatable=false)
 	private CaseCategory cCategory;
 	

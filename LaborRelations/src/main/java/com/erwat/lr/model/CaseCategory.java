@@ -1,18 +1,18 @@
 package com.erwat.lr.model;
 
 import java.util.Date;
-import java.util.List;
+//import java.util.List;
 
-import javax.persistence.CascadeType;
+//import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
+//import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
-import javax.persistence.OneToMany;
+//import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -28,8 +28,8 @@ public class CaseCategory {
 	@Column(name = "\"ID\"", columnDefinition = "INTEGER")
 	private Integer id;
 	
-	@OneToMany(cascade = CascadeType.ALL, mappedBy = "cCategory",targetEntity=CaseNature.class,fetch=FetchType.LAZY)
-	private List<CaseNature> cNature;
+//	@OneToMany(cascade = CascadeType.ALL, mappedBy = "cCategory",targetEntity=CaseNature.class,fetch=FetchType.LAZY)
+//	private List<CaseNature> cNature;
 
 	@Column(name = "\"DESCRIPTION\"", columnDefinition = "VARCHAR(64)")
 	private String description;
@@ -74,12 +74,12 @@ public class CaseCategory {
 		this.eDate = eDate;
 	}
 
-	public List<CaseNature> getcNature() {
-		return cNature;
-	}
-
-	public void setcNature(List<CaseNature> cNature) {
-		this.cNature = cNature;
-	}
+//	public List<CaseNature> getcNature() {
+//		return cNature;
+//	}
+//
+//	public void setcNature(List<CaseNature> cNature) {
+//		this.cNature = cNature;
+//	}
 
 }
